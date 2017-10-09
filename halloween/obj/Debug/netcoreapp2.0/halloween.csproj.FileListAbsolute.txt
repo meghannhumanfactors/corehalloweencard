@@ -1,0 +1,11 @@
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\bin\Debug\netcoreapp2.0\halloween.deps.json
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\bin\Debug\netcoreapp2.0\halloween.runtimeconfig.json
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\bin\Debug\netcoreapp2.0\halloween.runtimeconfig.dev.json
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\bin\Debug\netcoreapp2.0\halloween.dll
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\bin\Debug\netcoreapp2.0\halloween.pdb
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\obj\Debug\netcoreapp2.0\halloween.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\obj\Debug\netcoreapp2.0\halloween.AssemblyInfoInputs.cache
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\obj\Debug\netcoreapp2.0\halloween.AssemblyInfo.cs
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\obj\Debug\netcoreapp2.0\halloween.dll
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\obj\Debug\netcoreapp2.0\halloween.pdb
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcore\halloween\obj\Debug\netcoreapp2.0\halloween.csprojResolveAssemblyReference.cache

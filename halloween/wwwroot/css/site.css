@@ -1,0 +1,35 @@
+body {
+    font-family: 'Open Sans Condensed';
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+}
+
+a {
+    color: #0094ff; /*blue*/
+}
+
+    a:hover,
+    a:focus {
+        color: #D3D3D3; /*lightgrey*/
+    }
+
+
+
+h1 {
+    font-family: Nosifer, cursive;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: #000 url(/images/road-man-lights-legs.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.myform {
+    background-color: #FFFFFF; /*white*/
+    opacity: 0.8;
+    color: black;
+    padding: 1em;
+}

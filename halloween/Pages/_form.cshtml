@@ -1,0 +1,107 @@
+﻿@model IndexModel
+
+<div class="myform">
+
+    <!-- FORM Start-->
+    <form method="post">
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">To: </label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" name="recipient" placeholder="For example, freddykrueger@domain.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Subject:</label>
+            <div class="col-sm-10">
+                <input type="text" id="subject" class="form-control" name="subject" placeholder="e.g., Halloween Egreeting"
+                       maxlength="100">
+
+                <div class="countdown"></div>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Enter your message:</label>
+            <div class="col-sm-10">
+                <textarea asp-for="mesgfromuser" class="form-control"  name="mesgfromuser" rows="3" maxlength="630" placeholder="Message"></textarea>
+                <span asp-validation-for="mesgfromuser" class="text-danger"></span>
+
+                <div class="countdown" ></div>
+
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">From: Your Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="sendersname" placeholder="e.g. Michael Myers">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label"> From: Your Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" name="sendersemail" placeholder="e.g., MichaelMyers@domain.com">
+            </div>
+        </div>
+
+
+
+        <!-- CUSTOM Recaptcha API    START -->
+        <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
+        <!-- CUSTOM Recaptcha API    END -->
+
+        <br />
+
+        <!--  TERMS & CONDITIONS   START -->
+        <div class="form-group row">
+            <div class="col-sm-2">Terms & Conditions</div>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> I am at least 18 years. I agree to the  <a data-toggle="modal" data-target="#terms"> Terms & Conditions</a>.
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- TERMS & CONDITIONS  END -->
+        <!-- SUBMIT BUTTON START  -->
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="submit" class="btn btn-primary " value="Preview" />
+            </div>
+        </div>
+        <!-- SUBMIT BUTTON END  -->
+    </form>
+    <!-- FORM End-->
+</div>
+
+
+
+
+
+
+
+
+
+@*Terms & Conditions*@
+
+<!-- Modal -->
+<div id="terms" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
