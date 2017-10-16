@@ -5,36 +5,37 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
+using halloween.Model;
 
 namespace halloween.Pages
 {
     public class IndexModel : PageModel
     {
-        [BindProperty]
-        [Required(ErrorMessage = "Hey Dummy, that was rude!")]
-        public string mesgfromuser { get; set; }
-
-        [BindProperty]
-        public string recipient { get; set; }
-
-        [BindProperty]
-        public string subject { get; set; }
-
-        [BindProperty]
-        public string sendersname { get; set; }
-
-        [BindProperty]
-        public string sendersemail { get; set; }
-       
-
+      // DEFAULT MODE
+      
         public void OnGet()
         {
 
+            isPreviewPage = false;
         }
+
+        // PREVIEW MODE (AFTER SUBMITTING)
         public void OnPost()
         {
-
+            isPreviewPage = true;
         }
+
+        //BRIDGE TO GREETINGS MODEL
+        [BindProperty]
+        public Greetings bridgeGreetings { get; set; }
+
+        //TEST IF USER IS LOOKING AT PREVIEW OR FORM
+        public bool isPreviewPage { get; set; }
+
+
+
+
+
 
 
     }     

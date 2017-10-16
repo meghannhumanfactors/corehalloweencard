@@ -6,26 +6,24 @@
 
 <h1>Send your friend a Halloween Greeting!</h1>
 
-@Model.subject
+
 <div class="row">
     <div class="col-xs-12  col-sm-12 hidden-md hidden-lg">
-        @Html.Partial("_card")
-
-
-        @*<div class="mycard">
-            <img src="~/Images/road-man-lights-legs.jpg" class="img-responsive" />*@
-        </div>
-
-
-
+        @Html.Partial("_Card")
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
-        @Html.Partial("_form")
+        @if (Model.isPreviewPage)
+        {
+            @Html.Partial("_Preview")
+
+        }
+        else
+        {
+            @Html.Partial("_Form")
+
+        }
     </div>
 </div>
 
-@Html.Partial("_videomusic")
+@Html.Partial("_Videomusic")
 
-
-<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>

@@ -12542,11 +12542,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcore\\halloween\\halloween.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Source\\Repos\\corehalloweencard3\\halloween\\halloween.csproj",
       "projectName": "halloween",
-      "projectPath": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcore\\halloween\\halloween.csproj",
+      "projectPath": "C:\\Users\\David\\Source\\Repos\\corehalloweencard3\\halloween\\halloween.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcore\\halloween\\obj\\",
+      "outputPath": "C:\\Users\\David\\Source\\Repos\\corehalloweencard3\\halloween\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
