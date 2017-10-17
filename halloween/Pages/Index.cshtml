@@ -11,7 +11,9 @@
     <div class="col-xs-12  col-sm-12 hidden-md hidden-lg">
         @Html.Partial("_Card")
     </div>
+
     <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
+
         @if (Model.isPreviewPage)
         {
             @Html.Partial("_Preview")

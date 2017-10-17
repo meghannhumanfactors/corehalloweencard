@@ -31,5 +31,12 @@ h1 {
     background-color: #FFFFFF; /*white*/
     opacity: 0.8;
     color: black;
+
     padding: 1em;
+}
+input:focus {
+    background-color: #000000;
+    border-width: 3px;
+    border-color: #00fa9a;
+    color: white;
 }
