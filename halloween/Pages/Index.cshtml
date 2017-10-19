@@ -4,6 +4,7 @@
 }
 
 
+
 <h1>Send your friend a Halloween Greeting!</h1>
 
 
@@ -22,8 +23,12 @@
         else
         {
             @Html.Partial("_Form")
+            @section Scripts{
+            <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+            <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+            }
 
-        }
+}
     </div>
 </div>
 

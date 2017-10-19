@@ -15,7 +15,7 @@ namespace halloween.Model
 
         [DisplayName("From: Your Name")]
         [Required(ErrorMessage = "Required!")]
-        public string sendersnamet { get; set; }
+        public string sendersname { get; set; }
 
         [DisplayName("From: Your Email")]
         [Required(ErrorMessage = "Required!")]
