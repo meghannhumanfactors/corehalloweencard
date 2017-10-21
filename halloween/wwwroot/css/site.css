@@ -27,17 +27,53 @@ h1 {
     }
 }
 
+
+
+
+/*.playbutton {
+    float: right;
+}*/
+/*************  CARD END  *************/
+/*************  FORM START  ************/
 .myform {
-    background-color: #FFFFFF; /*white*/
-    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4em 1em;
+    float: right;
+    text-shadow: 2px 2px #000000;
+
+    /*background-color: #FFFFFF; /*white*/
+    /*opacity: 0.8;
     color: black;
 
-    padding: 1em;
+    padding: 1em;*/
+
 }
+
+
 input:focus {
+    /*background-color: lightgrey;*/
+    flex-grow: 4;
     background-color: #000000;
     border-width: 3px;
     border-color: #00fa9a;
     color: white;
     font-size: 18px;
 }
+
+
+#terms {
+    background: rgba(0, 0, 0, 0.25);
+    color: #000000;
+}
+
+/*************  FORM END  *************/
+
+
+
+
+
+/*************  PREVIEW START  ************/
+
+
+
+/*************  PREVIEW END ************/
