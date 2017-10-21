@@ -1,5 +1,34 @@
-﻿@page
-@model _PreviewModel
-@{
-}
-Hello World
+﻿
+
+@model IndexModel
+
+<div class="form-group row">
+    <label asp-for="bridgeGreetings.recipientname " class="col-sm-2 col-form-label">To:</label>
+    @Model.bridgeGreetings.recipientname 
+</div>
+
+
+<div class="form-group row">
+    <label asp-for="bridgeGreetings.recipientemail" class="col-sm-2 col-form-label">To:</label>
+    @Model.bridgeGreetings.recipientemail
+</div>
+
+<div class="form-group row">
+    <label asp-for="bridgeGreetings.subject" class="col-sm-2 col-form-label"></label>
+    @Model.bridgeGreetings.subject
+</div>
+
+<div class="form-group row">
+    <label asp-for="bridgeGreetings.mesgfromuser" class="col-sm-2 col-form-label"></label>
+    @Model.bridgeGreetings.mesgfromuser
+</div>
+
+<div class="form-group row">
+    <label asp-for="bridgeGreetings.sendersname" class="col-sm-2 col-form-label"></label>
+    @Model.bridgeGreetings.sendersname
+</div>
+
+<div class="form-group row">
+    <label asp-for="bridgeGreetings.sendersemail" class="col-sm-2 col-form-label">From: Your Email</label>
+    @Model.bridgeGreetings.sendersemail
+</div>

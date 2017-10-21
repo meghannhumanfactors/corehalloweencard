@@ -3,33 +3,44 @@
 <div class="myform">
     <!-- FORM Start-->
     <form method="post">
+
         <div class="form-group row">
-            <label asp-for="bridgeGreetings.recipient" class="col-sm-2 col-form-label">To:</label>
+            <label asp-for="bridgeGreetings.recipientname " class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
-                <input asp-for="bridgeGreetings.recipient" type="email" class="form-control" placeholder="For example, freddykrueger@domain.com" maxlength="100" required />
-                <div asp-validation-for="bridgeGreetings.recipient" class="text-danger"></div>
-                    
-                    <div class="countdown"></div>
-                </div>
+                <input asp-for="bridgeGreetings.recipientname " type="email" class="form-control" placeholder="For example, Freddy Krueger " maxlength="100" required />
+                <div asp-validation-for="bridgeGreetings.recipientname " class="text-danger"></div>
+
+                <div class="countdown"></div>
             </div>
-            <div class="form-group row">
-                <label asp-for="bridgeGreetings.subject" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="bridgeGreetings.subject" type="text" class="form-control" placeholder="e.g., Halloween Egreeting" maxlength="100" required />
-                    <div asp-validation-for="bridgeGreetings.subjet" class="text-danger"></div>
-                        
-                        <div class="countdown"></div>
-                    </div>
-                </div>
-            
-            <div class="form-group row">
-                <label asp-for="bridgeGreetings.mesgfromuser" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="bridgeGreetings.mesgfromuser" type="text" class="form-control" placeholder="e.g., Halloween Egreeting" maxlength="500" required />
-                    <div asp-validation-for="bridgeGreetings.mesgfromuser" class="text-danger"> </div>
-                        <div class="countdown"></div>
-                    </div>
-                </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="bridgeGreetings.recipientemail" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="bridgeGreetings.recipientemail" type="email" class="form-control" placeholder="For example, freddykrueger@domain.com" maxlength="100" required />
+                <div asp-validation-for="bridgeGreetings.recipient" class="text-danger"></div>
+
+                <div class="countdown"></div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="bridgeGreetings.subject" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="bridgeGreetings.subject" type="text" class="form-control" placeholder="e.g., Halloween Egreeting" maxlength="100" required />
+                <div asp-validation-for="bridgeGreetings.subjet" class="text-danger"></div>
+
+                <div class="countdown"></div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="bridgeGreetings.mesgfromuser" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="bridgeGreetings.mesgfromuser" type="text" class="form-control" placeholder="e.g., Halloween Egreeting" maxlength="500" required />
+                <div asp-validation-for="bridgeGreetings.mesgfromuser" class="text-danger"> </div>
+                <div class="countdown"></div>
+            </div>
+        </div>
         <div class="form-group row">
             <label asp-for="bridgeGreetings.sendersname" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
@@ -40,46 +51,46 @@
             </div>
         </div>
 
-                <div class="form-group row">
-                    <label asp-for="bridgeGreetings.sendersemail" class="col-sm-2 col-form-label">From: Your Email</label>
-                    <div class="col-sm-10">
-                        <input asp-for="bridgeGreetings.sendersemail" type="email" class="form-control" placeholder="For example, MichaelMyers@domain.com " maxlength="100" required />
-                        <div asp-validation-for="bridgeGreetings.sendersemail" class="text-danger"></div>
-                          
-                            <div class="countdown"></div>
-                        </div>
-                    </div>
+        <div class="form-group row">
+            <label asp-for="bridgeGreetings.sendersemail" class="col-sm-2 col-form-label">From: Your Email</label>
+            <div class="col-sm-10">
+                <input asp-for="bridgeGreetings.sendersemail" type="email" class="form-control" placeholder="For example, MichaelMyers@domain.com " maxlength="100" required />
+                <div asp-validation-for="bridgeGreetings.sendersemail" class="text-danger"></div>
 
-                    
+                <div class="countdown"></div>
+            </div>
+        </div>
 
-                    <!-- CUSTOM Recaptcha API    START -->
-                    <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
-                    <!-- CUSTOM Recaptcha API    END -->
 
-                    <br />
 
-                    <!--  TERMS & CONDITIONS   START -->
-                    <div class="form-group row">
-                        <div class="col-sm-2">Terms & Conditions</div>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox"> I am at least 18 years. I agree to the  <a data-toggle="modal" data-target="#terms"> Terms & Conditions</a>.
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- TERMS & CONDITIONS  END -->
-                    <!-- SUBMIT BUTTON START  -->
-                    <div class="form-group row">
-                        <div class="col-sm-10">
-                            <input type="submit" class="btn btn-primary " value="Preview" />
-                        </div>
-                    </div>
-                    <!-- SUBMIT BUTTON END  -->
-</form>
+        <!-- CUSTOM Recaptcha API    START -->
+        <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
+        <!-- CUSTOM Recaptcha API    END -->
+
+        <br />
+
+        <!--  TERMS & CONDITIONS   START -->
+        <div class="form-group row">
+            <div class="col-sm-2">Terms & Conditions</div>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> I am at least 18 years. I agree to the  <a data-toggle="modal" data-target="#terms"> Terms & Conditions</a>.
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- TERMS & CONDITIONS  END -->
+        <!-- SUBMIT BUTTON START  -->
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="submit" class="btn btn-primary " value="Preview" />
+            </div>
+        </div>
+        <!-- SUBMIT BUTTON END  -->
+    </form>
     <!-- FORM End-->
-  </div>
+</div>
 
 
 
@@ -102,7 +113,7 @@
                 <h4 class="modal-title">TERMS AND CONDITIONS</h4>
             </div>
             <div class="modal-body">
-                
+
                 <p> <b>1. Introduction</b> </p>
                 <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of this website. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.</p>
 

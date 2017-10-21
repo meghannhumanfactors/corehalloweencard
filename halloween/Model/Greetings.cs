@@ -8,10 +8,15 @@ using System.Threading.Tasks;
 namespace halloween.Model
 {
     public class Greetings
-    { 
-        [DisplayName("To")]
+    {
+        [DisplayName("To: Name")]
+        [Required(ErrorMessage = "Required!")]
+        public string recipientname { get; set; }
+
+
+        [DisplayName("To: Email")]
         [Required (ErrorMessage = "Required!")]
-        public string recipient { get; set; }
+        public string recipientemail { get; set; }
 
         [DisplayName("From: Your Name")]
         [Required(ErrorMessage = "Required!")]
