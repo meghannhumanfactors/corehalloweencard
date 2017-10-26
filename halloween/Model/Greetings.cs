@@ -37,7 +37,7 @@ namespace halloween.Model
 
 
         [Required(ErrorMessage = "Required!")]
-        public string agree { get; set; }
+        public bool agree { get; set; }
 
 
         [Required(ErrorMessage = "Required!")]
