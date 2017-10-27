@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans Condensed';
+    font-family: Arial;
     font-size: 14px;
     background: #000;
     color: #fff;
@@ -37,10 +37,10 @@ h1 {
 /*************  CARD END  *************/
 /*************  FORM START  ************/
 .myform {
-    background: rgba(255, 255, 255, 0.1);
+    background:rgba(0, 0, 0, .5);
     padding: 4em 1em;
     float: right;
-    text-shadow: 2px 2px #000000;
+    /*text-shadow:  2px #000000;*/
     z-index: -50;
 
     /*background-color: #FFFFFF; /*white*/
@@ -57,7 +57,7 @@ input:focus {
     flex-grow: 4;
     background-color: #000000;
     border-width: 3px;
-    border-color: #00fa9a;
+    border-color: #00fa9a; /*spring green*/
     color: white;
     font-size: 18px;
 }
