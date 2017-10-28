@@ -14,30 +14,32 @@
         @if (Model.isPreviewPage)
         {
             <h2>PLEASE REVIEW YOUR EGREETING!</h2>
-            @Html.Partial("_Preview")
-            
+                @Html.Partial("_Preview")
+
         }
         else
         {
             @Html.Partial("_Form")
             @*<h1>Send a Halloween Greeting!</h1>*@
             @section Scripts{
-            <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-            <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+                <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+                <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 
-        <script>
+                <script>
                     $("form").submit(function (ev­e­nt) {
+                        alert("I am about to submit the form");
                         var recaptcha = $("#g-recaptcha-response").val­­();
                         if (recaptcha === "") {
                             event.preventDefault();
                             alert("Please check the recaptcha");
                         }
                     });
-        </script>
+                </script>
             }
 
-}
+        }
     </div>
+
 </div>
 
 @*@Html.Partial("_Videomusic")*@
