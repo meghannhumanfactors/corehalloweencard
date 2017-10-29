@@ -14,7 +14,7 @@
         @if (Model.isPreviewPage)
         {
             <h2>PLEASE REVIEW YOUR EGREETING!</h2>
-                @Html.Partial("_Preview")
+            @Html.Partial("_Preview")
 
         }
         else
@@ -24,6 +24,9 @@
             @section Scripts{
                 <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
                 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+                <!-- RECAPTCHA API -->
+                <script src='https://www.google.com/recaptcha/api.js'></script>
 
                 <script>
                     $("form").submit(function (ev­e­nt) {
