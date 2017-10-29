@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -26,6 +27,9 @@ namespace halloween.Pages
                     //try
                     //{
                     // HEY, ADD TO DATABASE
+                    bridgeGreetings.createDate = DateTime.Now.ToString();
+                    bridgeGreetings.createIP =
+                        this.HttpContext.Connection.RemoteIpAddress.ToString();
                     _myDB.Greetings.Add(bridgeGreetings);
                     _myDB.SaveChanges();
 

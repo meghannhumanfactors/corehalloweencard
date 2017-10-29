@@ -53,15 +53,15 @@ namespace halloween.Model
 
 
 
-        [Required(ErrorMessage = "Required!")]
+        
         public bool agree { get; set; }
 
 
-        [Required(ErrorMessage = "Required!")]
+       
         public string createDate { get; set; }
 
 
-        [Required(ErrorMessage = "Required!")]
+        
         public string createIP { get; set; }
 
 
