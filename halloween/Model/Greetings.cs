@@ -9,6 +9,11 @@ namespace halloween.Model
 {
     public class Greetings
     {
+
+        //HEY, ADD A UNIQUE IDENTIFIER
+        [Key]
+        public int ID { get; set; }
+
         [DisplayName("To: Name")]
         [Display(Prompt = "For example, Freddy Krueger ")]
         [Required(ErrorMessage = "Required!")]

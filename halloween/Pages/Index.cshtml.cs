@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using halloween.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
-using halloween.Model;
-using System.Net.Http;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace halloween.Pages
 {
@@ -31,16 +28,18 @@ namespace halloween.Pages
             {
                 if (ModelState.IsValid)
                 {
-                    isPreviewPage = true;
-                    try
-                    {
+                    
+                    //try
+                    //{
+                        _myDB.Greetings.Add(bridgeGreetings);
+                        _myDB.SaveChanges();
                         // ADD TO DATABASE
                         //_context.__MODEL__.Add(__MODEL__);
                         //_context.SaveChanges();
 
-                        return RedirectToPage("Preview");
-                    }
-                    catch { }
+                        return RedirectToPage("Preview", new { id = bridgeGreetings.ID });
+                    //}
+                    //catch { }
                 }
             }
             else
@@ -54,6 +53,16 @@ namespace halloween.Pages
         //BRIDGE TO GREETINGS MODEL
         [BindProperty]
         public Greetings bridgeGreetings { get; set; }
+
+        //HEY CONNECT MY DATABASE TO THIS MODEL
+        private DB _myDB;
+
+        public IndexModel(DB myDB)
+        {
+            _myDB = myDB;
+        }
+
+
 
         //TEST IF USER IS LOOKING AT PREVIEW OR FORM
         public bool isPreviewPage { get; set; }
