@@ -45,7 +45,7 @@ namespace halloween.Pages
             }
             else
             {
-                ModelState.AddModelError("Greetings.Recaptcha", "Please select the recaptcha");
+                ModelState.AddModelError("bridgeGreetings.reCaptcha", "Please select the recaptcha");
             }
 
             return Page();
