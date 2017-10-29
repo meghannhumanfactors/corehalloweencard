@@ -1,20 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace halloween.Model
 {
     public class DB : DbContext
     {
-        //DEFAULT CONSTRUCTOR
+        // HEY! ADD THESE CONTRUCTORS!
         public DB() { }
+        public DB(DbContextOptions<DB> options) : base(options) { }
 
-        //CONSTRUCTOR
-        public DB(DbContextOptions<DB> options): base(options) { }
-
-        //CUSTOMIZED - CREATE A DB FOR EACH EXISTING MODEL(S)
+        // HEY! CREATE A DB FOR EACH EXISTING MODEL(S)
+        //public DbSet<Greetings> Friends { get; set; }
+        //public DbSet<Greetings> Frenemies { get; set; }
+        //public DbSet<Greetings> Enemies { get; set; }
         public DbSet<Greetings> Greetings { get; set; }
 
 

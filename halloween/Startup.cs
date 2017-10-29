@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using halloween.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using halloween.Model;
-using Microsoft.EntityFrameworkCore;
 
 namespace halloween
 {
@@ -24,7 +20,8 @@ namespace halloween
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            //WOWOCO: ADD DB AS A SERIVCE
+
+            // HEY! ADD DB AS A SERVICE
             services.AddDbContext<DB>(options => options.UseSqlite(Configuration["DB"]));
         }
 
@@ -50,7 +47,9 @@ namespace halloween
                     template: "{controller}/{action=Index}/{id?}");
             });
 
-            //HEY, CREATE THE DB, IF IT DOES NOT EXIST YET
+
+
+            // HEY! CREATE THE DB, IF IT DOES NOT EXIT YET!
             using (var serviceScope = app
                 .ApplicationServices
                 .GetRequiredService<IServiceScopeFactory>()
@@ -61,9 +60,8 @@ namespace halloween
                     .GetService<DB>()
                     .Database
                     .EnsureCreated();
-
-
             }
+
 
 
         }

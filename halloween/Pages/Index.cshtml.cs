@@ -11,52 +11,43 @@ namespace halloween.Pages
     public class IndexModel : PageModel
     {
         // DEFAULT MODE
-
         public void OnGet()
         {
-
             isPreviewPage = false;
         }
 
         // PREVIEW MODE (AFTER SUBMITTING)
-
         public async Task<IActionResult> OnPost()
         {
-            
-
             if (await isValid())
             {
                 if (ModelState.IsValid)
                 {
-                    
                     //try
                     //{
-                        _myDB.Greetings.Add(bridgeGreetings);
-                        _myDB.SaveChanges();
-                        // ADD TO DATABASE
-                        //_context.__MODEL__.Add(__MODEL__);
-                        //_context.SaveChanges();
+                    // HEY, ADD TO DATABASE
+                    _myDB.Greetings.Add(bridgeGreetings);
+                    _myDB.SaveChanges();
 
-                        return RedirectToPage("Preview", new { id = bridgeGreetings.ID });
+                    return RedirectToPage("Preview", new { id = bridgeGreetings.ID });
                     //}
                     //catch { }
                 }
             }
             else
             {
-                ModelState.AddModelError("bridgeGreetings.reCaptcha", "Please select the recaptcha");
+                ModelState.AddModelError("bridgeGreetings.reCaptcha", "Hahaha Halloween!!");
             }
 
             return Page();
         }
 
-        //BRIDGE TO GREETINGS MODEL
+        // BRIDGE TO GREETINGS MODEL
         [BindProperty]
         public Greetings bridgeGreetings { get; set; }
 
-        //HEY CONNECT MY DATABASE TO THIS MODEL
+        // HEY, CONNECT MY DATABASE TO THIS MODEL
         private DB _myDB;
-
         public IndexModel(DB myDB)
         {
             _myDB = myDB;
@@ -64,7 +55,7 @@ namespace halloween.Pages
 
 
 
-        //TEST IF USER IS LOOKING AT PREVIEW OR FORM
+        // TEST IF USER IS LOOKING AT PREVIEW OR FORM
         public bool isPreviewPage { get; set; }
 
         // RE-CAPTCHA VALIDATION
@@ -79,9 +70,9 @@ namespace halloween.Pages
                 using (var client = new HttpClient())
                 {
                     var values = new Dictionary<string, string>();
-                    values.Add("secret", "6Le5_S0UAAAAADVyjgJOG_4ptTimv71jLTGh8ZI0");
+                    values.Add("secret", "6Le-Jy0UAAAAANU5qOeZZ1KXA5NZ0IJxzaVweZys");
                     values.Add("response", response);
-                    //values.Add("remoteip", this.HttpContext.Connection.RemoteIpAddress.ToString());
+                    values.Add("remoteip", this.HttpContext.Connection.RemoteIpAddress.ToString());
 
                     var query = new FormUrlEncodedContent(values);
 
@@ -107,9 +98,5 @@ namespace halloween.Pages
 
 
 
-
-
-
     }
-
 }

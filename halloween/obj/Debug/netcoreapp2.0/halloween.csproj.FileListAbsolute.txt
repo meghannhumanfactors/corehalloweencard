@@ -19,4 +19,3 @@ C:\Users\David\Source\Repos\corehalloweencard3\halloween\obj\Debug\netcoreapp2.0
 C:\Users\David\Source\Repos\corehalloweencard3\halloween\obj\Debug\netcoreapp2.0\halloween.AssemblyInfo.cs
 C:\Users\David\Source\Repos\corehalloweencard3\halloween\obj\Debug\netcoreapp2.0\halloween.dll
 C:\Users\David\Source\Repos\corehalloweencard3\halloween\obj\Debug\netcoreapp2.0\halloween.pdb
-C:\Users\David\Source\Repos\corehalloweencard3\halloween\obj\Debug\netcoreapp2.0\halloween.csprojResolveAssemblyReference.cache
