@@ -11,39 +11,31 @@
 
     <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
 
-        @if (Model.isPreviewPage)
-        {
+        
             <h2>PLEASE REVIEW YOUR EGREETING!</h2>
             @Html.Partial("_Preview")
 
-        }
-        else
-        {
-            @Html.Partial("_Form")
-            @*<h1>Send a Halloween Greeting!</h1>*@
-            @section Scripts{
-                <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-                <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-
-                <!-- RECAPTCHA API -->
-                <script src='https://www.google.com/recaptcha/api.js'></script>
-
-                <script>
-                    $("form").submit(function (ev­e­nt) {
-                        alert("I am about to submit the form");
-                        var recaptcha = $("#g-recaptcha-response").val­­();
-                        if (recaptcha === "") {
-                            event.preventDefault();
-                            alert("Please check the recaptcha");
-                        }
-                    });
-                </script>
-            }
-
-        }
+      
     </div>
-
 </div>
 
-@*@Html.Partial("_Videomusic")*@
 
+@*@Html.Partial("_Form")*@
+@*<h1>Send a Halloween Greeting!</h1>*@
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+    <!-- RECAPTCHA API -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script>
+        $("form").submit(function (ev­e­nt) {
+            alert("I am about to submit the form");
+            var recaptcha = $("#g-recaptcha-response").val­­();
+            if (recaptcha === "") {
+                event.preventDefault();
+                alert("Please check the recaptcha");
+            }
+        });
+    </script>

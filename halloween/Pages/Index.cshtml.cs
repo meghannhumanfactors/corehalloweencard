@@ -38,7 +38,7 @@ namespace halloween.Pages
                         //_context.__MODEL__.Add(__MODEL__);
                         //_context.SaveChanges();
 
-                        return RedirectToPage("");
+                        return RedirectToPage("Preview");
                     }
                     catch { }
                 }
