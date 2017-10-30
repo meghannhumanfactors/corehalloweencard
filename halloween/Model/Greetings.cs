@@ -54,7 +54,7 @@ namespace halloween.Model
 
 
         
-        public bool terms { get; set; }
+        public string terms { get; set; }
 
 
        
