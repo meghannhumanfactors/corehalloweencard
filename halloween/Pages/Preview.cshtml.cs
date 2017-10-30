@@ -10,17 +10,7 @@ namespace halloween.Pages
 {
     public class PreviewModel : PageModel
     {
-        
-        public void OnGet(int ID = 0)
-        {
-            if (ID > 0)
-            {
-                bridgeGreetings = _myDB.Greetings.Find(ID);
-            }
-        }
-
-
-// BRIDGE TO GREETINGS MODEL
+        // BRIDGE TO GREETINGS MODEL
         [BindProperty]
         public Greetings bridgeGreetings { get; set; }
 
@@ -30,6 +20,14 @@ namespace halloween.Pages
         {
             _myDB = myDB;
         }
-    }
-    }
 
+
+        public void OnGet(int ID = 0)
+        {
+            if (ID > 0)
+            {
+                bridgeGreetings = _myDB.Greetings.Find(ID);
+            }
+        }
+    }
+}

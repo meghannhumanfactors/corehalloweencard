@@ -24,23 +24,26 @@ namespace halloween.Pages
             {
                 if (ModelState.IsValid)
                 {
-                    //try
-                    //{
-                    // HEY, ADD TO DATABASE
-                    bridgeGreetings.createDate = DateTime.Now.ToString();
-                    bridgeGreetings.createIP =
-                        this.HttpContext.Connection.RemoteIpAddress.ToString();
-                    _myDB.Greetings.Add(bridgeGreetings);
-                    _myDB.SaveChanges();
 
-                    return RedirectToPage("Preview", new { id = bridgeGreetings.ID });
-                    //}
-                    //catch { }
+                    try
+                    {
+                        // DB-RELATED: CUSTOMIZE VALUES TO BE ADDED TO THE DB
+                        bridgeGreetings.createDate = DateTime.Now.ToString();
+                        bridgeGreetings.createIP = this.HttpContext.Connection.RemoteIpAddress.ToString();
+
+                        // DB-RELATED: ADD NEW RECORD TO THE DATABASE 
+                        _myDB.Greetings.Add(bridgeGreetings);
+                        _myDB.SaveChanges();
+
+                        // DB-RELATED: SEND USER TO THE PREVIEW PAGE SHOWING THE NEW RECORD
+                        return RedirectToPage("Preview", new { id = bridgeGreetings.ID });
+                    }
+                    catch { }
                 }
             }
             else
             {
-                ModelState.AddModelError("bridgeGreetings.reCaptcha", "Hahaha Halloween!!");
+                ModelState.AddModelError("bridgeGreetings.reCaptcha", "Please select the checkbox!");
             }
 
             return Page();
@@ -74,7 +77,7 @@ namespace halloween.Pages
                 using (var client = new HttpClient())
                 {
                     var values = new Dictionary<string, string>();
-                    values.Add("secret", "6Le-Jy0UAAAAANU5qOeZZ1KXA5NZ0IJxzaVweZys");
+                    values.Add("secret", "6Le5_S0UAAAAADVyjgJOG_4ptTimv71jLTGh8ZI0");
                     values.Add("response", response);
                     values.Add("remoteip", this.HttpContext.Connection.RemoteIpAddress.ToString());
 
