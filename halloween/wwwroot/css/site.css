@@ -37,8 +37,8 @@ h1 {
 /*************  CARD END  *************/
 /*************  FORM START  ************/
 .myform {
-    background:rgba(0, 0, 0, .5);
-    padding: 4em 1em;
+    background:rgba(0, 0, 0, .7);
+    padding: 4em 2em;
     float: right;
     /*text-shadow:  2px #000000;*/
     z-index: -50;
