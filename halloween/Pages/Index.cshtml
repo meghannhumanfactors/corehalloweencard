@@ -40,3 +40,14 @@
             }
         });
     </script>}*@
+
+<script>
+    $("form").submit(function (ev­­­e­nt) {
+
+        var recaptcha = $("#g-recaptcha-response");
+
+        if (recaptcha.val() === "") {
+            event.preventDefault();
+            alert("Please check the recaptcha")
+        }
+</script>
