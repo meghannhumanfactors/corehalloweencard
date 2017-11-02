@@ -27,13 +27,13 @@ namespace halloween.Model
         [StringLength(100, MinimumLength = 3, ErrorMessage = "You must enter a valid email")]
         public string recipientemail { get; set; }
 
-        [DisplayName("From: Your Name")]
+        [DisplayName("Your Name")]
         [Display(Prompt = "e.g., Michael Myers")]
         [Required(ErrorMessage = "Required!")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "You must enter between 3 to 100 characters")]
         public string sendersname { get; set; }
 
-        [DisplayName("From: Your Email")]
+        [DisplayName("Your Email")]
         [Display(Prompt = "For example, MichaelMyers@domain.com")]
         [Required(ErrorMessage = "Required!")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "You must enter a valid email")]
@@ -45,7 +45,7 @@ namespace halloween.Model
         [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
         public string subject { get; set; }
 
-        [DisplayName("Enter your message")]
+        [DisplayName("Message")]
         [Display(Prompt = "e.g., We Witch you a Happy Hallween. Bugs & Hisses, Michael")]
         [Required(ErrorMessage = "Required!")]
         [StringLength(500, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 500 characters")]

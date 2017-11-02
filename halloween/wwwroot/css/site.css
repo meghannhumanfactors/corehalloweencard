@@ -16,9 +16,14 @@ a {
 
 
 
-h1 {
+h1  {
     font-family: Nosifer, cursive;
     z-index:50;
+}
+
+h2 {
+    font-family: Nosifer, cursive;
+    z-index: 50;
 }
 
 @media screen and (min-width: 992px) {
@@ -51,6 +56,9 @@ h1 {
 
 }
 
+.form-control:focus{
+    border: unset;
+}
 
 input:focus {
     /*background-color: lightgrey;*/
@@ -61,9 +69,18 @@ input:focus {
     color: white;
     font-size: 18px;
 }
-.form-control:focus{
-    border: unset;
+
+textarea:focus {
+    flex-grow: 4;
+    background-color: #000000;
+    border-width: 3px;
+    border-color: #00fa9a; /*spring green*/
+    color: white;
+    font-size: 18px;
 }
+}
+
+
 
 .text-danger {
     text-shadow: unset;
