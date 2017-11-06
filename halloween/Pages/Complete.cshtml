@@ -4,8 +4,8 @@
     ViewData["Title"] = "Complete";
 }
 
-<h2>Congrats!</h2>
+<h2>Congrats @Html.Raw(Model.bridgeGreetings.sendersname)!</h2>
 
-<p>Your egreeting was successfully sent!  </p>
+<p>Your egreeting was successfully sent to @Html.Raw(Model.bridgeGreetings.recipientname)!</p>
 
-<p> Do you want to send another? </p>
+<p> Do you want to send another?</p>
