@@ -30,6 +30,7 @@ namespace halloween.Pages
                         // DB-RELATED: CUSTOMIZE VALUES TO BE ADDED TO THE DB
                         bridgeGreetings.createDate = DateTime.Now.ToString();
                         bridgeGreetings.createIP = this.HttpContext.Connection.RemoteIpAddress.ToString();
+                        bridgeGreetings.mesgfromuser = bridgeGreetings.mesgfromuser.ToLower();
 
                         // DB-RELATED: ADD NEW RECORD TO THE DATABASE 
                         _myDB.Greetings.Add(bridgeGreetings);
