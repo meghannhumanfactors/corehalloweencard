@@ -32,6 +32,12 @@ namespace halloween.Pages
                         bridgeGreetings.createIP = this.HttpContext.Connection.RemoteIpAddress.ToString();
                         bridgeGreetings.mesgfromuser = bridgeGreetings.mesgfromuser.ToLower();
 
+                        //bridgeGreetings.fromEmail = bridgeGreetings.fromEmail.ToLower();
+                        //bridgeGreetings.toEmail = bridgeGreetings.toEmail.ToLower();
+                        //bridgeGreetings.agree = "true";
+                        //bridgeGreetings.mesg = bridgeGreetings.mesg.ToLower();
+                        //bridgeGreetings.mesg = bridgeGreetings.mesg.Replace("fuck", "duck");
+
                         // DB-RELATED: ADD NEW RECORD TO THE DATABASE 
                         _myDB.Greetings.Add(bridgeGreetings);
                         _myDB.SaveChanges();
@@ -39,7 +45,10 @@ namespace halloween.Pages
                         // DB-RELATED: SEND USER TO THE PREVIEW PAGE SHOWING THE NEW RECORD
                         return RedirectToPage("Preview", new { id = bridgeGreetings.ID });
                     }
-                    catch {return RedirectToPage("Index"); 
+                    catch
+                    {
+                        return RedirectToPage("Index");
+                    }
                 }
             }
             else
