@@ -12,7 +12,7 @@ namespace halloween.Model
 
         //HEY, ADD A UNIQUE IDENTIFIER
         [Key]
-        public int ID { get; set; }
+        public int? ID { get; set; }
 
         [DisplayName("To: Name")]
         [Display(Prompt = "For example, Freddy Krueger ")]
