@@ -73,7 +73,7 @@ namespace halloween.Pages
                 }
                 catch
                 {
-                    Message = "Sorry, Sandra made it bomb!" 
+                    Message = "Yikes, we were unable to send your egreeting."; 
                 }
             }
             return Page();
@@ -83,3 +83,4 @@ namespace halloween.Pages
 
     }
 }
+
