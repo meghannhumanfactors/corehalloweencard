@@ -14,7 +14,7 @@ namespace halloween.Pages
         // DEFAULT MODE
         public void OnGet()
         {
-            isPreviewPage = false;
+            
         }
 
         // PREVIEW MODE (AFTER SUBMITTING)
@@ -39,7 +39,7 @@ namespace halloween.Pages
                         // DB-RELATED: SEND USER TO THE PREVIEW PAGE SHOWING THE NEW RECORD
                         return RedirectToPage("Preview", new { id = bridgeGreetings.ID });
                     }
-                    catch { }
+                    catch {return RedirectToPage("Index"); 
                 }
             }
             else
