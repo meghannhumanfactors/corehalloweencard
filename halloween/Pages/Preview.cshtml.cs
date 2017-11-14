@@ -64,7 +64,7 @@ namespace halloween.Pages
                     bridgeGreetings.sendIP = this.HttpContext.Connection.RemoteIpAddress.ToString();
 
 
-                    //DB-RELATED: UPDATE REOD ON THE DATABASE
+                    //DB-RELATED: UPDATE RECORD ON THE DATABASE
                     _myDB.Greetings.Update(bridgeGreetings);
                     _myDB.SaveChanges();
 

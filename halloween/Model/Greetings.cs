@@ -53,7 +53,7 @@ namespace halloween.Model
 
 
 
-        
+       
         public string terms { get; set; }
 
 

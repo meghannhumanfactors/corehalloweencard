@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -66,9 +66,17 @@
 
 
     <!-- BEGIN: BODY HTML -->
-
     <div class="container-fluid">
-        @RenderBody()
+    <div class="row">
+        <div class="col-xs-12  col-sm-12 hidden-md hidden-lg">
+            @Html.Partial("_Card")
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
+           
+                @RenderBody()
+            </div>
+        </div>
     </div>
 
 
