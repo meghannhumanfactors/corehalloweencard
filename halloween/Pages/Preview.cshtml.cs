@@ -52,9 +52,9 @@ namespace halloween.Pages
                     using (SmtpClient smtpServer = new SmtpClient())
                     {
 
-                        smtpServer.EnableSsl = true;
-                        smtpServer.Host = "smtp.wowoco.org";//CHANGE DEPENDING ON YOUR MAIL SERVER
-                        smtpServer.Port = 25;//CHANGE DEPENDING ON YOUR MAIL SERVER
+                        smtpServer.EnableSsl = false;
+                        smtpServer.Host = "smtp18.wowoco.org";//CHANGE DEPENDING ON YOUR MAIL SERVER
+                        smtpServer.Port = 2525;//CHANGE DEPENDING ON YOUR MAIL SERVER
                         smtpServer.UseDefaultCredentials = false;
                         smtpServer.Send(Mailer);
 
@@ -68,7 +68,7 @@ namespace halloween.Pages
                     _myDB.Greetings.Update(bridgeGreetings);
                     _myDB.SaveChanges();
 
-                    return RedirectToPage("Complete");
+                    return RedirectToPage("Complete", new { ID = bridgeGreetings.ID }); 
 
                 }
                 catch
