@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVLih7XXQtUunpQH6/afyMQAAAAACAAAAAAAQZgAAAAEAACAAAAD7T++1HKxW5Lcsq8FHZnYWPPYSdyBqR4CHDe7Exmn4cQAAAAAOgAAAAAIAACAAAACzykoA6gZH0/mc6Km7rR0fn5Pd5l8HWVvQep8XGAPNFBAAAAC8nYEAkFMPKNKeNTELU2RaQAAAAKNB5Yz4XNczMiHvlYvVxnyTsOtbci8538PinRD9DeVQTDIQxfoKES67sIrwpADA6PGstR8+/fVhg5PDgB9YZhc=</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.wowoco.org/egreeting/halloween/</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>10/29/2017 23:14:59</publishTime>
+    </File>
+    <File Include="bower.json">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="bundleconfig.json">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>10/29/2017 19:01:29</publishTime>
+    </File>
+    <File Include="halloween.deps.json">
+      <publishTime>11/22/2017 20:07:57</publishTime>
+    </File>
+    <File Include="halloween.dll">
+      <publishTime>11/22/2017 20:07:52</publishTime>
+    </File>
+    <File Include="halloween.pdb">
+      <publishTime>11/22/2017 20:07:52</publishTime>
+    </File>
+    <File Include="halloween.PrecompiledViews.dll">
+      <publishTime>11/22/2017 20:07:56</publishTime>
+    </File>
+    <File Include="halloween.PrecompiledViews.pdb">
+      <publishTime>11/22/2017 20:07:56</publishTime>
+    </File>
+    <File Include="halloween.runtimeconfig.json">
+      <publishTime>11/22/2017 20:07:57</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>11/15/2017 22:29:01</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>11/15/2017 22:29:06</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>10/29/2017 19:01:29</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>10/29/2017 19:01:29</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>10/29/2017 19:01:29</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>10/29/2017 19:01:29</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>10/29/2017 19:01:29</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>10/29/2017 19:01:29</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>10/29/2017 19:01:30</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>11/15/2017 22:29:51</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>11/15/2017 22:29:19</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>11/15/2017 22:29:19</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>11/15/2017 22:29:19</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>11/15/2017 22:29:20</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>11/15/2017 22:29:21</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>11/22/2017 20:07:57</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>11/01/2017 17:22:52</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.min.css">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="wwwroot/images/HalloweenBanner.jpg">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="wwwroot/images/kittylick.gif">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="wwwroot/images/pumpkins.jpg">
+      <publishTime>10/29/2017 23:11:11</publishTime>
+    </File>
+    <File Include="wwwroot/images/road-man-lights-legs.jpg">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/images/web.png">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/js/videoforaudio.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/npm.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>11/01/2017 16:28:35</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>10/29/2017 23:11:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

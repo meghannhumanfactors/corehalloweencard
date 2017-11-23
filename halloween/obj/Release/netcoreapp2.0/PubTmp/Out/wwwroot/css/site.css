@@ -1,0 +1,108 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+}
+
+a {
+    color: #0094ff; /*blue*/
+}
+
+    a:hover,
+    a:focus {
+        color: #D3D3D3; /*lightgrey*/
+    }
+
+
+
+h1  {
+    font-family: Nosifer, cursive;
+    z-index:50;
+}
+
+h2 {
+    font-family: Nosifer, cursive;
+    z-index: 50;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: #000 url(/images/road-man-lights-legs.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
+
+
+
+/*.playbutton {
+    float: right;
+}*/
+/*************  CARD END  *************/
+/*************  FORM START  ************/
+.myform {
+    background:rgba(0, 0, 0, .7);
+    padding: 4em 2em;
+    float: right;
+    /*text-shadow:  2px #000000;*/
+    z-index: -50;
+
+    /*background-color: #FFFFFF; /*white*/
+    /*opacity: 0.8;
+    color: black;
+
+    padding: 1em;*/
+
+}
+
+.form-control:focus{
+    border: unset;
+}
+
+input:focus {
+    /*background-color: lightgrey;*/
+    flex-grow: 4;
+    background-color: #000000;
+    border-width: 3px;
+    border-color: #00fa9a; /*spring green*/
+    color: white;
+    font-size: 18px;
+}
+
+textarea:focus {
+    flex-grow: 4;
+    background-color: #000000;
+    border-width: 3px;
+    border-color: #00fa9a; /*spring green*/
+    color: white;
+    font-size: 18px;
+}
+}
+
+
+
+.text-danger {
+    text-shadow: unset;
+    text-shadow: none;
+    font-weight: 900;
+}
+#terms {
+    background: rgba(0, 0, 0, 0.25);
+    color: #000000;
+}
+
+/*************  FORM END  *************/
+
+
+
+
+
+/*************  PREVIEW START  ************/
+
+.mypreviewpage {
+    background: rgba(0, 0, 0, .5);
+    padding: 4em 1em;
+}
+
+/*************  PREVIEW END ************/

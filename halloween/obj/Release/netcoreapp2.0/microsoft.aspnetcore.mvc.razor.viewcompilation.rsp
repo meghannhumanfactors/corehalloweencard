@@ -1,0 +1,17 @@
+C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=halloween
+--content-root=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\Complete.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\Error.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\Index.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\Preview.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\Update.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_card.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_form.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_Layout.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_Preview.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_ValidationScriptsPartial.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_videomusic.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_ViewImports.cshtml
+--file=C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\Pages\_ViewStart.cshtml
