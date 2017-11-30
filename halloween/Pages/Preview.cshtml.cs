@@ -44,6 +44,12 @@ namespace halloween.Pages
 
                     Mailer.To.Add(new MailAddress(bridgeGreetings.recipientemail, bridgeGreetings.recipientname));
                     Mailer.Subject = bridgeGreetings.subject;
+
+                    Mailer.Body = "<img src='http://meghann.wowoco.org/images/thumbnail.jpg'/>"
+                        + bridgeGreetings.mesgfromuser;
+                       /* Mailer.fromName + "has a greeting for you! Visit http://meghann.wowoco.org/read/" + Contact.ID*/
+
+
                     Mailer.Body = bridgeGreetings.mesgfromuser;
                     Mailer.From = new MailAddress(bridgeGreetings.sendersemail, bridgeGreetings.sendersname);
 

@@ -17,14 +17,10 @@ a {
 
 
 h1  {
-    font-family: Nosifer, cursive;
+    font-family: Butcherman, cursive;
     z-index:50;
 }
 
-h2 {
-    font-family: Nosifer, cursive;
-    z-index: 50;
-}
 
 @media screen and (min-width: 992px) {
     body {
@@ -78,6 +74,8 @@ textarea:focus {
     color: white;
     font-size: 18px;
 }
+textarea {
+    resize: vertical; /* user can resize vertically, but width is fixed */
 }
 
 

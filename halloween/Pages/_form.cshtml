@@ -2,95 +2,99 @@
 
     @*<input type ="hidden" asp-for=""*@
 
-<div class="myform">
-    <!-- FORM Start-->
-    <form method="post">
-        <h1>Send a Egreeting!</h1>
-        <div class="form-group row">
-            <label asp-for="@Model.recipientname " class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-                <input asp-for="@Model.recipientname " type="text" class="form-control" maxlength="100" />
-                <span asp-validation-for="@Model.recipientname " class="text-danger"></span>
-                <div class="countdown"></div>
-            </div>
-        </div>
 
-        <div class="form-group row">
-            <label asp-for="@Model.recipientemail" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-                <input asp-for="@Model.recipientemail" type="email" class="form-control" maxlength="100" />
-                <span asp-validation-for="@Model.recipientemail" class="text-danger"></span>
-                <div class="countdown"></div>
-            </div>
-        </div>
+    <div class="myform">
+       
+            <!-- FORM Start-->
+            <form method="post">
 
-        <div class="form-group row">
-            <label asp-for="@Model.subject" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-                <input asp-for="@Model.subject" type="text" class="form-control" maxlength="100" />
-                <span asp-validation-for="@Model.subject" class="text-danger"></span>
-                <div class="countdown"></div>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label asp-for="@Model.mesgfromuser" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-                <textarea asp-for="@Model.mesgfromuser" class="form-control" maxlength="500"></textarea>
-                <span asp-validation-for="@Model.mesgfromuser" class="text-danger"> </span>
-                <div class="countdown"></div>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label asp-for="@Model.sendersname" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-                <input asp-for="@Model.sendersname" type="text" class="form-control" maxlength="100" />
-                <span asp-validation-for="@Model.sendersname" class="text-danger"></span>
-                <div class="countdown"></div>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label asp-for="@Model.sendersemail" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-                <input asp-for="@Model.sendersemail" type="email" class="form-control" maxlength="100" />
-                <span asp-validation-for="@Model.sendersemail" class="text-danger"></span>
-                <div class="countdown"></div>
-            </div>
-
-        </div>
-        <br />
-        <br />
-
-        <!-- CUSTOM Recaptcha API    START -->
-        <div class="form-group">
-            <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
-            <span asp-validation-for="@Model.reCaptcha" class="text-danger"></span>
-        </div>
-        <!-- CUSTOM Recaptcha API    END -->
-        <!--  TERMS & CONDITIONS   START -->
-        <div class="form-group row">
-            <div class="col-sm-2">Terms & Conditions</div>
-            <div class="col-sm-10">
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input asp-for="@Model.terms" class="form-check-input" type="checkbox"> I am at least 18 years. I agree to the  <a data-toggle="modal" data-target="#terms"> Terms & Conditions</a>.
-                    </label>
+                <div class="form-group row">
+                    <label asp-for="@Model.recipientname " class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="@Model.recipientname " type="text" class="form-control" maxlength="100" />
+                        <span asp-validation-for="@Model.recipientname " class="text-danger"></span>
+                        <div class="countdown"></div>
+                    </div>
                 </div>
-            </div>
+
+                <div class="form-group row">
+                    <label asp-for="@Model.recipientemail" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="@Model.recipientemail" type="email" class="form-control" maxlength="100" />
+                        <span asp-validation-for="@Model.recipientemail" class="text-danger"></span>
+                        <div class="countdown"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="@Model.subject" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="@Model.subject" type="text" class="form-control" maxlength="100" />
+                        <span asp-validation-for="@Model.subject" class="text-danger"></span>
+                        <div class="countdown"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="@Model.mesgfromuser" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <textarea asp-for="@Model.mesgfromuser" class="form-control" maxlength="500"></textarea>
+                        <span asp-validation-for="@Model.mesgfromuser" class="text-danger"> </span>
+                        <div class="countdown"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="@Model.sendersname" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="@Model.sendersname" type="text" class="form-control" maxlength="100" />
+                        <span asp-validation-for="@Model.sendersname" class="text-danger"></span>
+                        <div class="countdown"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="@Model.sendersemail" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="@Model.sendersemail" type="email" class="form-control" maxlength="100" />
+                        <span asp-validation-for="@Model.sendersemail" class="text-danger"></span>
+                        <div class="countdown"></div>
+                    </div>
+
+                </div>
+                <br />
+                <br />
+
+                <!-- CUSTOM Recaptcha API    START -->
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
+                    <span asp-validation-for="@Model.reCaptcha" class="text-danger"></span>
+                </div>
+                <!-- CUSTOM Recaptcha API    END -->
+                <!--  TERMS & CONDITIONS   START -->
+                <div class="form-group row">
+                    @*<div class="col-sm-2">Terms & Conditions</div>
+                    <div class="col-sm-10">*@
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input asp-for="@Model.terms" class="form-check-input" type="checkbox"> I am at least 18 years. I agree to the  <a data-toggle="modal" data-target="#terms"> Terms & Conditions</a>.
+                        </label>
+                    </div>
+
+                </div>
+                <!-- TERMS & CONDITIONS  END -->
+                <!-- SUBMIT BUTTON START  -->
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="submit" class="btn btn-primary " value="Preview" />
+                    </div>
+                </div>
+                <!-- SUBMIT BUTTON END  -->
+            </form>
+            <!-- FORM End-->
         </div>
-        <!-- TERMS & CONDITIONS  END -->
-        <!-- SUBMIT BUTTON START  -->
-        <div class="form-group row">
-            <div class="col-sm-10">
-                <input type="submit" class="btn btn-primary " value="Preview" />
-            </div>
-        </div>
-        <!-- SUBMIT BUTTON END  -->
-    </form>
-    <!-- FORM End-->
-</div>
+
+
 
 
 

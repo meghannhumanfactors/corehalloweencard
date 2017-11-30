@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/29/2017 23:11:11</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>10/29/2017 23:14:59</publishTime>
+      <publishTime>11/22/2017 22:26:29</publishTime>
     </File>
     <File Include="bower.json">
       <publishTime>10/29/2017 23:11:11</publishTime>
@@ -26,22 +26,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/29/2017 19:01:29</publishTime>
     </File>
     <File Include="halloween.deps.json">
-      <publishTime>11/22/2017 20:07:57</publishTime>
+      <publishTime>11/29/2017 19:27:02</publishTime>
     </File>
     <File Include="halloween.dll">
-      <publishTime>11/22/2017 20:07:52</publishTime>
+      <publishTime>11/29/2017 19:26:58</publishTime>
     </File>
     <File Include="halloween.pdb">
-      <publishTime>11/22/2017 20:07:52</publishTime>
+      <publishTime>11/29/2017 19:26:58</publishTime>
     </File>
     <File Include="halloween.PrecompiledViews.dll">
-      <publishTime>11/22/2017 20:07:56</publishTime>
+      <publishTime>11/29/2017 19:27:01</publishTime>
     </File>
     <File Include="halloween.PrecompiledViews.pdb">
-      <publishTime>11/22/2017 20:07:56</publishTime>
+      <publishTime>11/29/2017 19:27:01</publishTime>
     </File>
     <File Include="halloween.runtimeconfig.json">
-      <publishTime>11/22/2017 20:07:57</publishTime>
+      <publishTime>11/29/2017 19:27:02</publishTime>
     </File>
     <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
       <publishTime>11/15/2017 22:29:01</publishTime>
@@ -89,10 +89,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/15/2017 22:29:21</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>11/22/2017 20:07:57</publishTime>
+      <publishTime>11/29/2017 19:27:02</publishTime>
     </File>
     <File Include="wwwroot/css/site.css">
-      <publishTime>11/01/2017 17:22:52</publishTime>
+      <publishTime>11/29/2017 16:49:40</publishTime>
     </File>
     <File Include="wwwroot/css/site.min.css">
       <publishTime>10/29/2017 23:11:11</publishTime>
