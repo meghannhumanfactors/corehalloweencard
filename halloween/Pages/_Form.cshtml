@@ -1,4 +1,6 @@
 ﻿@model halloween.Model.Greetings
+@using Microsoft.Extensions.Configuration;
+@inject IConfiguration _myConfiguration
 
     @*<input type ="hidden" asp-for=""*@
 
@@ -67,7 +69,7 @@
 
                 <!-- CUSTOM Recaptcha API    START -->
                 <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
+                    <div class="g-recaptcha" data-sitekey="@_myConfiguration["Recaptcha: Public"]);"></div>
                     <span asp-validation-for="@Model.reCaptcha" class="text-danger"></span>
                 </div>
                 <!-- CUSTOM Recaptcha API    END -->
