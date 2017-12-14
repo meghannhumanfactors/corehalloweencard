@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using halloween.Model;
 using System.Net.Mail;
+using Microsoft.Extensions.Configuration;
 
 namespace halloween.Pages
 {
@@ -15,11 +16,14 @@ namespace halloween.Pages
         [BindProperty]
         public Greetings bridgeGreetings { get; set; }
 
+        private IConfiguration _myConfiguration { get; set; }
+
         // HEY, CONNECT MY DATABASE TO THIS MODEL
         private DB _myDB;
-        public PreviewModel(DB myDB)
+        public PreviewModel(DB myDB,IConfiguration myConfiguration)
         {
             _myDB = myDB;
+            _myConfiguration = myConfiguration;
         }
 
 
@@ -58,10 +62,10 @@ namespace halloween.Pages
                     using (SmtpClient smtpServer = new SmtpClient())
                     {
 
-                        smtpServer.EnableSsl = false;
-                        smtpServer.Host = "smtp18.wowoco.org";//CHANGE DEPENDING ON YOUR MAIL SERVER
-                        smtpServer.Port = 2525;//CHANGE DEPENDING ON YOUR MAIL SERVER
-                        smtpServer.UseDefaultCredentials = false;
+                        smtpServer.EnableSsl = Boolean.Parse(_myConfiguration["SMTP:EnableSsl"]);
+                        smtpServer.Host = _myConfiguration["SMTP: Host"];//CHANGE DEPENDING ON YOUR MAIL SERVER
+                        smtpServer.Port = Int32.Parse(_myConfiguration["SMTP:Port"]); //CHANGE DEPENDING ON YOUR MAIL SERVER
+                        smtpServer.UseDefaultCredentials = Boolean.Parse(_myConfiguration["SMTP:UseDefaultCredentials"]);
                         smtpServer.Send(Mailer);
 
                     }

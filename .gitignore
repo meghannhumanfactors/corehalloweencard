@@ -4,3 +4,8 @@
 
 /.vs/egreetingcore/v15/Server/sqlite3/db.lock
 /.vs/egreetingcore/v15/sqlite3/db.lock
+
+/db/
+*.db
+**/appsettings.json
+**/appsettings.development.json

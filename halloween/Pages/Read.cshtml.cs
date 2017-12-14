@@ -12,12 +12,13 @@ namespace halloween.Pages
             if (id > 0)
             {
                 bridgeGreetings = _myDB.Greetings.Find(id);
-                return Page();
+                
             }
-            else
-            {
+           if (bridgeGreetings== null){
                 return RedirectToPage("index");
             }
+
+            return Page();
         }
 
         // EMAIL-RELATED

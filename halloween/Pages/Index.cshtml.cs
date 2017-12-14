@@ -1,6 +1,7 @@
 ﻿using halloween.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -63,14 +64,16 @@ namespace halloween.Pages
         [BindProperty]
         public Greetings bridgeGreetings { get; set; }
 
+        private IConfiguration _myConfiguration { get; set; }
+
         // HEY, CONNECT MY DATABASE TO THIS MODEL
         private DB _myDB;
-        public IndexModel(DB myDB)
+        public IndexModel(DB myDB, IConfiguration myConfiguration)  
         {
             _myDB = myDB;
+             _myConfiguration = myConfiguration;
+
         }
-
-
 
         // TEST IF USER IS LOOKING AT PREVIEW OR FORM
         public bool isPreviewPage { get; set; }
@@ -87,7 +90,7 @@ namespace halloween.Pages
                 using (var client = new HttpClient())
                 {
                     var values = new Dictionary<string, string>();
-                    values.Add("secret", "6Le5_S0UAAAAADVyjgJOG_4ptTimv71jLTGh8ZI0");
+                    values.Add("secret", _myConfiguration["Recaptcha: Private"]);
                     values.Add("response", response);
                     values.Add("remoteip", this.HttpContext.Connection.RemoteIpAddress.ToString());
 

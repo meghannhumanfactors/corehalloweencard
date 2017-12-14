@@ -3,7 +3,6 @@ C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\hallowee
 C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\bin\Release\netcoreapp2.0\halloween.runtimeconfig.dev.json
 C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\bin\Release\netcoreapp2.0\halloween.dll
 C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\bin\Release\netcoreapp2.0\halloween.pdb
-C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\obj\Release\netcoreapp2.0\halloween.csprojResolveAssemblyReference.cache
 C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\obj\Release\netcoreapp2.0\halloween.csproj.CoreCompileInputs.cache
 C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\obj\Release\netcoreapp2.0\halloween.AssemblyInfoInputs.cache
 C:\Users\David\Documents\Visual Studio 2017\Projects\egreetingcorefinal\halloween\obj\Release\netcoreapp2.0\halloween.AssemblyInfo.cs

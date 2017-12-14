@@ -1,16 +1,10 @@
-﻿@page
+﻿@page "{ID?}"
 @model ReadModel
 @{
 }
 
-<div class="row">
-    <div class="col-xs-12  col-sm-12 hidden-md hidden-lg">
-        @Html.Partial("_Card")
-    </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
+<h1>Here is your greeting from @Model.bridgeGreetings.sendersemail</h1>
+      <h3>@Model.bridgeGreetings.mesgfromuser</h3>
 
-      <h1> bridgeGreetings.mesgfromuser</h1>
-      
-    </div>
-</div>
+<a href="/" class="btn btn-primary">Send your own greeting!</a>
