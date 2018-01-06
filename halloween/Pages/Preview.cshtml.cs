@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using halloween.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using halloween.Model;
-using System.Net.Mail;
 using Microsoft.Extensions.Configuration;
+using System;
+using System.Net;
+using System.Net.Mail;
 
 namespace halloween.Pages
 {
@@ -20,7 +18,7 @@ namespace halloween.Pages
 
         // HEY, CONNECT MY DATABASE TO THIS MODEL
         private DB _myDB;
-        public PreviewModel(DB myDB,IConfiguration myConfiguration)
+        public PreviewModel(DB myDB, IConfiguration myConfiguration)
         {
             _myDB = myDB;
             _myConfiguration = myConfiguration;
@@ -29,17 +27,22 @@ namespace halloween.Pages
 
         public void OnGet(int ID = 0)
         {
-            
+
             if (ID > 0)
             {
-          
+
                 bridgeGreetings = _myDB.Greetings.Find(ID);
             }
         }
-        public string Message { get; set;}
-        public IActionResult OnPost(int id = 0) {
-            if (id > 0) {
+
+        // EMAIL-RELATED
+        public string Message { get; set; }
+        public IActionResult OnPost(int id = 0)
+        {
+            if (id > 0)
+            {
                 bridgeGreetings = _myDB.Greetings.Find(id);
+                var emailUrl = "http://meghann.wowoco.org/email?id=" + bridgeGreetings.ID;
 
                 try
                 {
@@ -49,12 +52,14 @@ namespace halloween.Pages
                     Mailer.To.Add(new MailAddress(bridgeGreetings.recipientemail, bridgeGreetings.recipientname));
                     Mailer.Subject = bridgeGreetings.subject;
 
-                    Mailer.Body = "<img src='http://meghann.wowoco.org/images/thumbnail.jpg'/>"
-                        + bridgeGreetings.mesgfromuser;
-                       /* Mailer.fromName + "has a greeting for you! Visit http://meghann.wowoco.org/read/" + Contact.ID*/
 
+                    Mailer.Body = "You have a message from " + bridgeGreetings.sendersemail + "(" + bridgeGreetings.sendersname + ").  Please visit http://meghann.wowoco.org/read/" + bridgeGreetings.ID;
 
-                    Mailer.Body = bridgeGreetings.mesgfromuser;
+                    using (WebClient client = new WebClient())
+                    {
+                        Mailer.Body = client.DownloadString(new Uri(emailUrl));
+                    }
+
                     Mailer.From = new MailAddress(bridgeGreetings.sendersemail, bridgeGreetings.sendersname);
 
                     Mailer.IsBodyHtml = true;
@@ -69,6 +74,8 @@ namespace halloween.Pages
                         smtpServer.Send(Mailer);
 
                     }
+
+
                     //DB-RELATED: ASSIGN SEND INFO TO DATABASE
                     bridgeGreetings.sendDate = DateTime.Now.ToString();
                     bridgeGreetings.sendIP = this.HttpContext.Connection.RemoteIpAddress.ToString();
@@ -78,17 +85,17 @@ namespace halloween.Pages
                     _myDB.Greetings.Update(bridgeGreetings);
                     _myDB.SaveChanges();
 
-                    return RedirectToPage("Complete", new { ID = bridgeGreetings.ID }); 
+                    return RedirectToPage("Complete", new { ID = bridgeGreetings.ID });
 
                 }
                 catch
                 {
-                    Message = "Yikes, we were unable to send your egreeting."; 
+                    Message = "Yikes, we were unable to send your eGreeting.";
                 }
             }
             return Page();
         }
-        
+
 
 
     }

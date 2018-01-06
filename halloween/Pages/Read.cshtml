@@ -1,8 +1,9 @@
 ﻿@page "{ID?}"
 @model ReadModel
-@{
-}
 
+@{
+    ViewBag.cssPage = "read";
+}
 
 <h1>Here is your greeting from @Model.bridgeGreetings.sendersemail</h1>
       <h3>@Model.bridgeGreetings.mesgfromuser</h3>

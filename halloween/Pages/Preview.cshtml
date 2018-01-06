@@ -1,18 +1,34 @@
 ﻿@page
 @model PreviewModel
 
+@***********************************************
+    @page "{ID?}"
+    @using halloween.Pages
+    @model halloween.Pages.ReadModel
+    <link rel="stylesheet" href="~/css/dark-theme.css">
+
+    @{
+        ViewBag.cssPage = "read";
+    }
 
 
-        @Html.Partial("_Preview", Model.bridgeGreetings)
+    <div class="panel panel-default">
+        <div class="panel-heading ">
+            <h3><span id="name">@Model.Greetings.FromName</span> sent you a card!</h3>
+        </div>
+    ************************************************************@
 
-        @*EDIT & SEND BUTTONS START *@
-        <form method="post">
-            <input type="hidden" asp-for="@Model.bridgeGreetings.ID" />
 
-            <div class="btn-group">
-                <a href="/update?id=@Model.bridgeGreetings.ID" class="btn btn-primary">Edit</a>
-                <input type="submit" value="Send" class="btn btn-primary" />
-            </div>
-        </form>
-        @*EDIT & SEND BUTTONS END *@
-   
+@Html.Partial("_Preview", Model.bridgeGreetings)
+
+@*EDIT & SEND BUTTONS START *@
+<form method="post">
+    <input type="hidden" asp-for="@Model.bridgeGreetings.ID" />
+
+    <div class="btn-group">
+        <a href="/update?id=@Model.bridgeGreetings.ID" class="btn btn-primary">Edit</a>
+        <input type="submit" value="Send" class="btn btn-primary" />
+    </div>
+</form>
+@*EDIT & SEND BUTTONS END *@
+

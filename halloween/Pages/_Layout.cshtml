@@ -1,6 +1,11 @@
 ﻿
-
-
+@{
+    var meta_url = "http://meghann.wowoco.org";
+    var meta_image = meta_url + ViewBag.meta_image;
+    var meta_title = "e-Greeting " + ViewBag.meta_title;
+    var meta_desc = ViewBag.meta_desc;
+    var meta_keyword = "e-greeting, e-Greeting, wowoco, design, digital card, " + ViewBag.meta_keyword;
+}
 
 
 
@@ -11,9 +16,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Halloween e-Greeting</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>@meta_title</title>
+    <meta name="description" content="@meta_desc">
+    <meta name="keywords" content="@meta_keyword">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -23,19 +28,20 @@
     <!-- BOC: FACEBOOK -->
     <link rel="canonical" href="" />
     <meta property="fb:app_id" content="" />
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="@meta_title" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:image" content="@meta_image" />
+    <meta property="og:url" content="@meta_url" />
+    <meta property="og:description" content="@meta_desc" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="" />
+    <title>@ViewBag.meta_title</title>
 
     <!-- BOC: TWITTER -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:image" content="" /
+    <meta name="twitter:title" content="@meta_title" />
+    <meta name="twitter:description" content="@meta_desc" />
+    <meta name="twitter:image" content="@meta_image" />
 
     <!-- FAVICON  -->
     <link rel="icon" href="" type="image/x-icon" />
@@ -81,37 +87,41 @@
 
             <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
 
-                @RenderBody()
-            </div>
+    @*<body class="@ViewBag.theme @ViewBag.dimension">
+        <div class="container">
+            <div class="page-header">
+                <h1>@ViewBag.meta_title</h1>
+            </div>*@
+
+
+            @RenderBody()
         </div>
-    </div>
+        </div>
+        </div>
+
+
+
+        <footer>
+            &copy; @DateTime.Now.Year - Meghann Human Factors @ViewBag.theme Greeting. All rights reserved
+        </footer>
+
+
+        <!-- END: BODY HTML -->
+        <!-- JQUERY LIBRARY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+        <!-- BOOTSTRAP LIBRARY -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <script src="~/js/site.js"></script>
+
+        @RenderSection("Scripts", required: false)
 
 
 
 
-
-
-    <footer>
-        &copy; @DateTime.Now.Year - Meghann Human Factors
-    </footer>
-
-
-    <!-- END: BODY HTML -->
-    <!-- JQUERY LIBRARY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-    <!-- BOOTSTRAP LIBRARY -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-    <script src="~/js/site.js"></script>
-
-    @RenderSection("Scripts", required: false)
-
-
-
-
-</body>
+    </body>
 
 </html>

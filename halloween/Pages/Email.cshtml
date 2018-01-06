@@ -1,0 +1,38 @@
+﻿@page
+@model halloween.Pages.EmailModel
+
+
+@{
+    Layout = null;
+}
+
+@*THIS IS A TEMPLATE FOR AN EMAIL THAT IS WHY THERE IS NO LAYOUT*@
+
+
+<center>
+    <a href="~/read?id=@Model.Greetings.ID">
+
+        <div> HAVING TROUBLE READING THIS EMAIL? CLICK HERE.</div>
+        <img src="~/images/road-man-lights-legs.jpg"
+             alt= "man's legs in front of the car with headlights."
+             title="Click to preview your greeting" />
+    </a>
+
+    <div>
+        @Model.Greetings.Message
+
+        <br /> <br />
+
+        From,
+        <br />
+
+        @Model.Greetings.sendersname (@Model.Greetings.sendersemail)
+
+    </div>
+
+
+
+    <div style="margin-top:50px; font-size:10px;">
+        This email was sent to @Model.Greetings.recipientemail from @Model.Greetings.recipientname
+    </div>
+</center>
