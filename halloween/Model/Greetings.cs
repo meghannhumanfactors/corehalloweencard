@@ -46,7 +46,7 @@ namespace halloween.Model
         public string subject { get; set; }
 
         [DisplayName("Message")]
-        [Display(Prompt = "e.g., We Witch you a Happy Hallween. Bugs & Hisses, Michael")]
+        [Display(Prompt = "e.g., We Witch you a Happy Halloween. Bugs & Hisses, Michael")]
         [Required(ErrorMessage = "Required!")]
         [StringLength(500, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 500 characters")]
         public string mesgfromuser { get; set; }

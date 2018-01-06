@@ -17,8 +17,8 @@ a {
 
 .btn-primary {
     color: #fff;
-    background-color: #ff0000;
-    border-color: #204d74;
+    background-color: #000;
+    border-color: #fff;
 }
 .btn-primary:hover {
     color: #fff;
