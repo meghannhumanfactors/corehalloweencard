@@ -22,8 +22,8 @@ a {
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #00fa9a;
-    border-color: #204d74;
+    background-color: #323232;
+    border-color: #fff;
 }
 
 h1  {
@@ -80,9 +80,9 @@ input:focus {
 
 textarea:focus {
     flex-grow: 4;
-    background-color: #000000;
+    background-color: #000;
     border-width: 3px;
-    border-color: #00fa9a; /*spring green*/
+    border-color: #fff; /*white*/
     color: #fff;
     font-size: 18px;
 }

@@ -13124,11 +13124,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcorefinal\\halloween\\halloween.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcore\\halloween\\halloween.csproj",
       "projectName": "halloween",
-      "projectPath": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcorefinal\\halloween\\halloween.csproj",
+      "projectPath": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcore\\halloween\\halloween.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcorefinal\\halloween\\obj\\",
+      "outputPath": "C:\\Users\\David\\Documents\\Visual Studio 2017\\Projects\\egreetingcore\\halloween\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13158,18 +13158,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           },
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

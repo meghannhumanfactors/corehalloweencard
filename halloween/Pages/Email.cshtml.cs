@@ -9,11 +9,11 @@ namespace halloween.Pages
     {
         [BindProperty]
         public Greetings Greetings { get; set; }
-        private Database _dbContext { get; set; }
+        private DB _dbContext { get; set; }
         private IConfiguration _configuration { get; set; }
 
         //hey, Create the database connection through the constructor
-        public EmailModel(Database dbContext, IConfiguration configuration)
+        public EmailModel(DB dbContext, IConfiguration configuration)
         {
             _dbContext = dbContext;
             _configuration = configuration;
